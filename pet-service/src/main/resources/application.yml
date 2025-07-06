@@ -6,9 +6,9 @@ spring:
     name: pet-service
 
   datasource:
-    url: jdbc:postgresql://ep-misty-bread-a8zqgwmk-pooler.eastus2.azure.neon.tech:5432/petdb?sslmode=require&channelBinding=require
-    username: petdb_owner
-    password: npg_VzZC8xHm7DAv
+    url: jdbc:postgresql://ep-fragrant-lake-a8pj0mft-pooler.eastus2.azure.neon.tech/neondb?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_ER0VJif3Leab
     driver-class-name: org.postgresql.Driver
 
   jpa:

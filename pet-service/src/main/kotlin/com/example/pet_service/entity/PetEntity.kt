@@ -23,6 +23,8 @@ data class PetEntity(
 
     val profileImageUrl: String,
 
-    val noseImageUrl: String
+    val noseImageUrl: String,
+
+    val ownerId: Long
 )
 

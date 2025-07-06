@@ -11,7 +11,8 @@ object PetMapper {
         age = entity.age,
         gender = entity.gender,
         profileImageUrl = entity.profileImageUrl,
-        noseImageUrl = entity.noseImageUrl
+        noseImageUrl = entity.noseImageUrl,
+        ownerId = entity.ownerId
     )
 
     fun toEntity(dto: PetDto) = PetEntity(
@@ -21,6 +22,7 @@ object PetMapper {
         age = dto.age,
         gender = dto.gender,
         profileImageUrl = dto.profileImageUrl,
-        noseImageUrl = dto.noseImageUrl
+        noseImageUrl = dto.noseImageUrl,
+        ownerId = dto.ownerId
     )
 }

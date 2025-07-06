@@ -1,6 +1,7 @@
 package com.example.owner_service.controller
 
 import com.example.owner_service.dto.OwnerDTO
+import com.example.owner_service.dto.OwnerWithPetsDTO
 import com.example.owner_service.service.OwnerService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -18,4 +19,10 @@ class OwnerController(private val service: OwnerService) {
 
     @PostMapping
     fun create(@RequestBody dto: OwnerDTO): OwnerDTO = service.create(dto)
+
+    @GetMapping("/with-pets")
+    fun getOwnersWithPets(): List<OwnerWithPetsDTO> {
+        return service.getOwnersWithPets()
+    }
+
 }

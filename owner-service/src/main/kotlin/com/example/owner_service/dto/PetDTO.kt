@@ -1,6 +1,6 @@
-package com.example.pet_service.dto
+package com.example.owner_service.dto
 
-data class PetDto(
+data class PetDTO(
     val id: Long? = null,
     val name: String,
     val breed: String,
